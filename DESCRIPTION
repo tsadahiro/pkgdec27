@@ -1,0 +1,10 @@
+Package: pkgdec27
+Title: Generate, manipulate and plot the random sorting network of type B
+Version: 0.0.0.9000
+Authors@R: 
+    person("Taizo", "Sadahiro", , "sadahiro@tsuda.ac.jp", role = c("aut", "cre"))
+Description: This package provides functions to generate, manipulate, and plot the random sorting network of type B.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
