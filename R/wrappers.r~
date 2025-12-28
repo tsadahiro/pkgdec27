@@ -1,0 +1,8 @@
+#' Sample max-cell x trace from shifted SYT
+#'
+#' @param n size parameter
+#' @return integer vector
+#' @export
+shifted_hook_walk_xtrace <- function(n) {
+  .Call(`_pkgdec27_shifted_hook_walk_xtrace`, n)
+}
