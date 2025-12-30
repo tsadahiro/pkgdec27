@@ -64,27 +64,22 @@ trajectory = function(w, particles) {
       person[w[t] + 1] = buf
     }
   }
+  for (p in particles) {
+      j = idx[p]
+      time[[j]] = c(time[[j]],T)
+      pos[[j]] = c(pos[[j]],p)
+  }
   return(list(time=time, pos=pos, particles=particles))
 }
 
 
 #' Plot particle trajectories
 #'
-#' Plot one or more particle trajectories produced by \code{trajectory()}.
+#' @param traj trajectory object
+#' @return NULL
 #'
-#' @param traj A trajectory object returned by \code{trajectory()}.
-#'
-#' @return Invisibly returns \code{NULL}.
-#'
-#' @details
-#' This function uses base R graphics and is optimized for speed.
-#' Each particle trajectory is drawn as a single polyline.
-#'
-#' @examples
-#' w <- c(1, 2, 1, 0, 1)
-#' tr <- trajectory(w, particles = c(1, 2))
-#' plot_trajectory(tr)
-#'
+#' @importFrom grDevices hsv
+#' @importFrom graphics lines
 #' @export
 plot_trajectory = function(traj){
   m = length(traj$time)

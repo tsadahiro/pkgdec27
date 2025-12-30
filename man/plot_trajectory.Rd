@@ -7,21 +7,8 @@
 plot_trajectory(traj)
 }
 \arguments{
-\item{traj}{A trajectory object returned by \code{trajectory()}.}
-}
-\value{
-Invisibly returns \code{NULL}.
+\item{traj}{trajectory object}
 }
 \description{
-Plot one or more particle trajectories produced by \code{trajectory()}.
-}
-\details{
-This function uses base R graphics and is optimized for speed.
-Each particle trajectory is drawn as a single polyline.
-}
-\examples{
-w <- c(1, 2, 1, 0, 1)
-tr <- trajectory(w, particles = c(1, 2))
-plot_trajectory(tr)
-
+Plot particle trajectories
 }
