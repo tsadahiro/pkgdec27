@@ -2,6 +2,6 @@
 # Generator token: 10BE3573-1514-4C36-9D1C-5A225CD40393
 
 shifted_hook_walk_xtrace <- function(n) {
-    .Call('_pkgdec27_shifted_hook_walk_xtrace', PACKAGE = 'pkgdec27', n)
+    .Call(`_pkgdec27_shifted_hook_walk_xtrace`, n)
 }
 

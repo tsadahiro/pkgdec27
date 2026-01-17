@@ -25,8 +25,8 @@ It records only event times for the specified particles,
 making it memory-efficient even for very long reduced words.
 }
 \examples{
-w <- c(1, 2, 1, 0, 1)
-tr <- trajectory(w, particles = c(1, 2))
+w <- shifted_hook_walk_xtrace(30)
+tr <- trajectory(w, particles = c(1, seq(5, 30, by = 5)))
 tr$pos[[1]]
 
 }

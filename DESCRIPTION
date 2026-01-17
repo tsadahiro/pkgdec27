@@ -1,9 +1,9 @@
 Package: pkgdec27
-Title: Generate, manipulate and plot the random sorting network of type B
-Version: 0.0.0.9000
+Title: Sampling Random Sorting Networks of Type B
+Version: 0.1.0
 Authors@R: 
     person("Taizo", "Sadahiro", , "sadahiro@tsuda.ac.jp", role = c("aut", "cre"))
-Description: This package provides functions to generate, manipulate, and plot the random sorting network of type B.
+Description: Implements exact sampling algorithms for random sorting networks of Coxeter type B via standard Young tableaux of shifted staircase shape and the Edelman–Greene bijection These methods enable experimental and theoretical studies of random sorting networks.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

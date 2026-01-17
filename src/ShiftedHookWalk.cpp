@@ -85,8 +85,11 @@ public:
     Cell hookWalkStep(const Cell &cell) {
         auto h = hook(cell);
         if (h.empty()) return cell;
-        uniform_int_distribution<int> dist(0, h.size() - 1);
-        return h[dist(rng)];
+        //uniform_int_distribution<int> dist(0, h.size() - 1);
+        //return h[dist(rng)];
+	// 修正後（Rの乱数を使う）
+	int idx = floor(R::unif_rand() * h.size());
+	return h[idx];	
     }
 
     // Java: hookWalk

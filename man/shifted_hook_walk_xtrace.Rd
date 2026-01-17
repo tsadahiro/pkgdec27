@@ -15,3 +15,8 @@ integer vector
 \description{
 Sample max-cell x trace from shifted SYT
 }
+\examples{
+w <- shifted_hook_walk_xtrace(30)
+tr <- trajectory(w, particles = c(1, 5 * (1:6)))
+plot_trajectory(tr)
+}
